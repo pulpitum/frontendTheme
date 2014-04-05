@@ -1,0 +1,4 @@
+frontendTheme
+=============
+
+Pulpitum frontend theme
