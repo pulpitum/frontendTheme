@@ -33,8 +33,7 @@ return array(
         // Before event inherit from package config and the theme that call before,
         // you can use this event to set meta, breadcrumb template or anything
         // you want inheriting.
-        'before' => function($theme)
-        {
+        'before' => function ($theme) {
             // You can remove this line anytime.
             $theme->setTitle('Copyright ©  2013 - Laravel.in.th');
 
@@ -55,8 +54,7 @@ return array(
         // Listen on event before render a theme,
         // this event should call to assign some assets,
         // breadcrumb template.
-        'beforeRenderTheme' => function($theme)
-        {
+        'beforeRenderTheme' => function ($theme) {
             // You may use this event to set up your assets.
             // $theme->asset()->usePath()->add('core', 'core.js');
             // $theme->asset()->add('jquery', 'vendor/jquery/jquery.min.js');
@@ -73,14 +71,12 @@ return array(
         // this should call to assign style, script for a layout.
         'beforeRenderLayout' => array(
 
-            'default' => function($theme)
-            {
+            'default' => function ($theme) {
                 // $theme->asset()->usePath()->add('ipad', 'css/layouts/ipad.css');
             },
-            'logout' => function($theme)
-            {
+            'logout' => function ($theme) {
                 // $theme->asset()->usePath()->add('ipad', 'css/layouts/ipad.css');
-            }            
+            }
 
         )
 
