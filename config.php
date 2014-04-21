@@ -36,6 +36,7 @@ return array(
         'before' => function ($theme) {
             // You can remove this line anytime.
             $theme->setTitle('Copyright ©  2013 - Laravel.in.th');
+            $theme->setCopyright('Copyright ©  2013 - Laravel.in.th');
 
             // Breadcrumb template.
             // $theme->breadcrumb()->setTemplate('
@@ -57,8 +58,11 @@ return array(
         'beforeRenderTheme' => function ($theme) {
             // You may use this event to set up your assets.
             // $theme->asset()->usePath()->add('core', 'core.js');
-            // $theme->asset()->add('jquery', 'vendor/jquery/jquery.min.js');
-            // $theme->asset()->add('jquery-ui', 'vendor/jqueryui/jquery-ui.min.js', array('jquery'));
+            $theme->asset()->usePath()->add('jquery', 'js/jquery.js');
+            $theme->asset()->usePath()->add('bootstrap', 'js/bootstrap.min.js', array('jquery'));
+			
+			$theme->asset()->usePath()->add('bootstrap', 'css/bootstrap.min.css');
+			$theme->asset()->usePath()->add('theme', 'css/media.css');
 
             // Partial composer.
             // $theme->partialComposer('header', function($view)
@@ -72,7 +76,8 @@ return array(
         'beforeRenderLayout' => array(
 
             'default' => function ($theme) {
-                // $theme->asset()->usePath()->add('ipad', 'css/layouts/ipad.css');
+                /*$theme->asset()->usePath()->add('bootstrap', 'css/bootstrap.min.css');
+				$theme->asset()->usePath()->add('theme', 'css/media.css');*/
             },
             'logout' => function ($theme) {
                 // $theme->asset()->usePath()->add('ipad', 'css/layouts/ipad.css');

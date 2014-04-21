@@ -10,10 +10,18 @@
     </head>
     <body>
         <?php echo Theme::partial('header'); ?>
-		
+
+		<div class="jumbotron">
+		  <div class="container">
+			<h1>The fox jumps over the lazy dog</h1>
+			<br>
+			<h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</h2>
+		  </div> <!-- /.container -->
+		</div> <!-- /.jumbotron -->
+
 		<div class="spacer"></div>
 		
-        <div class="container main">
+        <div class="container">
             <?php echo Theme::content(); ?>
         </div>
 
