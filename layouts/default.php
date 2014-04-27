@@ -12,9 +12,10 @@
         <?php echo Theme::partial('header'); ?>
 		
 		<div class="spacer"></div>
-		
-        <div class="container main">
-            <?php echo Theme::content(); ?>
+        <div class="container main <?php echo S::dasherize(Request::path())?> <?php echo Theme::get('class'); ?>">
+            <div class="content-wrapper">
+                <?php echo Theme::content(); ?>
+            </div>
         </div>
 
         <?php echo Theme::partial('footer'); ?>

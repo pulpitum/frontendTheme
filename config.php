@@ -60,6 +60,10 @@ return array(
             // $theme->asset()->usePath()->add('core', 'core.js');
             $theme->asset()->usePath()->add('jquery', 'js/jquery.js');
             $theme->asset()->usePath()->add('bootstrap', 'js/bootstrap.min.js', array('jquery'));
+            $theme->asset()->usePath()->add('autocomplete', 'js/jquery.autocomplete.min.js', array('jquery'));
+
+
+            $theme->asset()->usePath()->add('main', 'js/main.js');
 			
 			$theme->asset()->usePath()->add('bootstrap', 'css/bootstrap.min.css');
 			$theme->asset()->usePath()->add('theme', 'css/media.css');
