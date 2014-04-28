@@ -5,9 +5,7 @@
 	</div> <!-- /.navbar-header -->
 
 	<form class="navbar-form navbar-left">
-        <div class="input-group input-group-sm" style="max-width:360px;">
-          <input type="text" data-provide="typeahead" class="form-control typeahead" placeholder="Search" name="srch-term" id="srch-term">
-        </div>
+        <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
     </form>
 
 	<div class="collapse navbar-collapse navbar-ex1-collapse">
